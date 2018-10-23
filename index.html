@@ -1,16 +1,25 @@
 <!DOCTYPE html>
-<html lang="en-US">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Today's Date</title>
+    <title>document.forms example</title>
 </head>
 
 <body>
 
+<form name="login" action="/index.php" method="post">
+    <input name="pseudo" type="text">
+    <input name="password" type="password">
+    <select name="jeu" size="1">
+        <option></option>
+        <option>League of Legends</option>
+        <option>Fortnite</option>
+        <option>CS:GO</option>
+        <option>Overwatch</option>
+        <option>PUBG</option>
+        <option>Autre</option>
+    </select>
+
+    <button type="submit">Log in</button>
+</form>
 </body>
-
-<script src="js/script.js"></script>
-
 </html>
