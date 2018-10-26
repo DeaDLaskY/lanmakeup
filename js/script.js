@@ -8,11 +8,6 @@ i.setAttribute('type',"text");
 i.setAttribute('name',"username");
 
 document.getElementById('input').onkeyup = function()
-{
-    var input_val = document.getElementById('input').value;
-    document.getElementById('formsel').value = input_val;
-}
-
 
 var s = document.createElement("input"); //input element, Submit button
 s.setAttribute('type',"submit");
