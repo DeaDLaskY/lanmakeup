@@ -3,26 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Inscription</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<form name="inscription" method="post" action="./inscription.php">
-    Adresse mail:<input type="text" name="mail" placeholder="adresse@mail"><br>
-    Pseudo:<input type="text" name="pseudo"><br>
-    Password:<input type="password" name="mdp" placeholder="mot de passe sécurisé"><br><br><br>
-    League Of Legends: <input type="checkbox" name="check_list[]" value="lol">
-    <select size="1" >
-        Rank:<option>Bronze</option>
-        <option value="">Silver</option>
-        <option>Gold</option>
-        <option>Platine</option>
-        <option>Diamand</option>
-        <option>Master</option>
-        <option>Challenger</option>
-    </select><br>
-    CS GO: <input type="checkbox" name="check_list[]" value="csgo">
-    Fortnite :<input type="checkbox" name="check_list[]" value="fortnite">
-    Overwatch: <input type="checkbox" name="check_list[]" value="overwatch">
-    Autre :<input type="input" name="check_list[]" value="autre" placeholder="Nom Jeu">
-</form>
+    <div id="deco" </div>
+    <div id="FormInscri">
+    <form name="inscription" method="post" action="./inscription.php">
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="mail" placeholder="adresse@mail"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="pseudo" placeholder="Pseudo"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="mdp" placeholder="Mot de passe"><br><br><br>
+        <input type="checkbox" name="check_list[]" value="lol"> League Of Legends
+        <select size="1" >
+            Rank:
+            <option>Unranked</option>
+            <option>Bronze</option>
+            <option>Silver</option>
+            <option>Gold</option>
+            <option>Platine</option>
+            <option>Diamant</option>
+            <option>Master</option>
+            <option>Challenger</option>
+        </select><br>
+        <input type="checkbox" name="check_list[]" value="csgo"> CS GO <br>
+        <input type="checkbox" name="check_list[]" value="overwatch"> Overwatch<br>
+        <input type="checkbox" name="check_list[]" value="fortnite"> Fortnite<br>
+    <br> &nbsp; <input type="input" name="check_list[]" value="autre" placeholder="Idées d'ajouts"> <br>
+        <br>&nbsp;&nbsp;<button type="submit">S'inscrire</button>
+    </form>
+    </div>
 </body>
 </html>
