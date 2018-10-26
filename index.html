@@ -6,14 +6,16 @@
 
 <body>
 
-<form name="login" action="./data.php" method="post">
-    <input name="pseudo" type="text">
-    <input name="password" type="password">
-    League of Legends:<input name="jeu" value="lol" type="checkbox">
-    CSGO:<input name="jeu" value="csgo" type="checkbox">
-
-    </select>
-    <button type="submit">Log in</button>
+<form name="login" action="./data.php" method="post"><br>
+    adresse mail:<input name="pseudo" type="text"><br>
+    Password: <input name="password" type="password"><br>
+    Pas de compte? <a href="inscription.html">S'inscrire</a><br>
+    <input type="checkbox" name="check_list[]" value="lol">
+    <input type="checkbox" name="check_list[]" value="csgo">
+    <input type="checkbox" name="check_list[]" value="fortnite">
+    <input type="checkbox" name="check_list[]" value="overwatch">
+    <input type="checkbox" name="check_list[]" value="autre">
+    <button type="submit">Envoyer</button>
 </form>
 </body>
 </html>
