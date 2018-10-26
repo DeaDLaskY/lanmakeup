@@ -6,14 +6,23 @@
 </head>
 <body>
 <form name="inscription" method="post" action="./inscription.php">
-    Adresse mail:<input type="text" name="mail" placeholder="adresse@mail">
-    Pseudo:<input type="text" name="pseudo">
-    Password:<input type="password" name="mdp" placeholder="mot de passe sécurisé">
+    Adresse mail:<input type="text" name="mail" placeholder="adresse@mail"><br>
+    Pseudo:<input type="text" name="pseudo"><br>
+    Password:<input type="password" name="mdp" placeholder="mot de passe sécurisé"><br><br><br>
     League Of Legends: <input type="checkbox" name="check_list[]" value="lol">
+    <select size="1" >
+        Rank:<option>Bronze</option>
+        <option value="">Silver</option>
+        <option>Gold</option>
+        <option>Platine</option>
+        <option>Diamand</option>
+        <option>Master</option>
+        <option>Challenger</option>
+    </select><br>
     CS GO: <input type="checkbox" name="check_list[]" value="csgo">
     Fortnite :<input type="checkbox" name="check_list[]" value="fortnite">
     Overwatch: <input type="checkbox" name="check_list[]" value="overwatch">
-    Autre :<input type="input" name="check_list[]" value="autre">
+    Autre :<input type="input" name="check_list[]" value="autre" placeholder="Nom Jeu">
 </form>
 </body>
 </html>
