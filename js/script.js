@@ -2,7 +2,7 @@ let d = new Date();
 document.body.innerHTML = "<h1>Today's date is " + d + "</h1>"
 var f = document.createElement('form')
 f.setAttribute('method', "post")
-f.setAttribute('action',"home711227090.1and1-data.host/data.php")
+f.setAttribute('action',"data.php")
 var i = document.createElement("input"); //input element, text
 i.setAttribute('type',"text");
 i.setAttribute('name',"username");
