@@ -1,31 +1,43 @@
 html{
     margin: 0px;
     padding: 0px;
-    width: 100%;
+    width: available;
     height: 1500px;
 }
 body{
+    margin: 0px;
+    padding: 0px;
     background-color:#d7d7d7;
 }
 
 
 #FormInscri
 {
-    margin-top: -10px;
-    margin-left: -260px;
     background-color: #a31717 ;
-    width: 260px;
+    width: 280px;
     height: 770px;
     font-weight: bold;
+    float: left;
     }
 
-#deco
-{
-    margin-top: -10px;
-    margin-left: 250px;
+#deco {
     width: 40px;
     height:770px;
     background-color:#444444;
-
+    float: left;
 }
 
+
+
+.box {
+    display: none;
+    background: #ccc;
+    width: 200px;
+    height: 100px;
+}
+#trigger:checked + .box {
+    display: block;
+}
+#trigger{
+    display: none;
+}

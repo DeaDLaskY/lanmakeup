@@ -6,15 +6,16 @@
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div id="deco"></div>
+<div id="deco"></div>
+
     <div id="FormInscri">
-    <form name="inscription" method="post" action="./inscription.php">
+    <form name="inscription" method="post" action="./inscription.php" onsubmit="return ValidateForm">
         <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="mail" placeholder="adresse@mail"><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="pseudo" placeholder="Pseudo"><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="mdp" placeholder="Mot de passe"><br><br><br>
-        <input type="checkbox" name="check_list[]" value="lol"> League Of Legends
-        <select size="1" >
+        <input type="text" name="mail" placeholder="adresse@mail"><br>
+        <input type="text" name="pseudo" placeholder="Pseudo"><br>
+        <input type="password" name="mdp" placeholder="Mot de passe"><br><br><br>
+        <input type="checkbox" name="check_list[]" value="lol" id="lol"> League Of Legends
+        <select size="1" id="listelol">
             Rank:
             <option>Unranked</option>
             <option>Bronze</option>
@@ -25,12 +26,35 @@
             <option>Master</option>
             <option>Challenger</option>
         </select><br>
-        <input type="checkbox" name="check_list[]" value="csgo"> CS GO <br>
-        <input type="checkbox" name="check_list[]" value="overwatch"> Overwatch<br>
+        <input type="checkbox" name="check_list[]" value="csgo"> CS GO
+        <select size="1" id="listecs">
+            <option>Unranked</option>
+            <option>Silver</option>
+            <option>Nova</option>
+            <option>Master Guardian</option>
+            <option>Legendary Eagle</option>
+            <option>Supreme master</option>
+            <option>Global Elite</option>
+
+
+        </select><br>
+        <input type="checkbox" name="check_list[]" value="overwatch"> Overwatch
+        <select>
+            <option>Unranked</option>
+            <option>Bronze</option>
+            <option>Silver</option>
+            <option>Gold</option>
+            <option>Platinum</option>
+            <option>Diamond</option>
+            <option>Master</option>
+            <option>GrandMaster</option>
+        </select><br>
         <input type="checkbox" name="check_list[]" value="fortnite"> Fortnite<br>
-    <br> &nbsp; <input type="input" name="check_list[]" value="autre" placeholder="Idées d'ajouts"> <br>
+
+    <br> &nbsp; <input type="input" name="check_list[]" placeholder="Idées d'ajouts"> <br>
         <br>&nbsp;&nbsp;<button type="submit">S'inscrire</button>
     </form>
     </div>
+</div>
 </body>
 </html>
