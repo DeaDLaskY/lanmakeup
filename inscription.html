@@ -11,20 +11,20 @@
     <div id="FormInscri">
     <form name="inscription" method="post" action="./inscription.php" onsubmit="return ValidateForm">
         <br>
-        <input type="text" name="mail" placeholder="adresse@mail"><br>
-        <input type="text" name="pseudo" placeholder="Pseudo"><br>
-        <input type="password" name="mdp" placeholder="Mot de passe"><br><br><br>
+        <input type="text" name="mail" placeholder="adresse@mail" required="required"><br>
+        <input type="text" name="pseudo" placeholder="Pseudo"required="required"><br>
+        <input type="password" name="mdp" placeholder="Mot de passe"required="required"><br><br><br>
         <input type="checkbox" name="check_list[]" value="lol" id="lol"> League Of Legends
-        <select size="1" id="listelol">
+        <select name="listelol" size="1">
             Rank:
-            <option>Unranked</option>
-            <option>Bronze</option>
-            <option>Silver</option>
-            <option>Gold</option>
-            <option>Platine</option>
-            <option>Diamant</option>
-            <option>Master</option>
-            <option>Challenger</option>
+            <option value="unranked">Unranked</option>
+            <option value="Bronze">Bronze</option>
+            <option value="Silver">Silver</option>
+            <option value="Gold">Gold</option>
+            <option value="Platine">Platine</option>
+            <option value="Diamand">Diamant</option>
+            <option value="Master">Master</option>
+            <option value="Chalenger">Challenger</option>
         </select><br>
         <input type="checkbox" name="check_list[]" value="csgo"> CS GO
         <select size="1" id="listecs">
