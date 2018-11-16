@@ -6,7 +6,7 @@
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div id="deco"></div>
+
 
     <div id="FormInscri">
     <form name="inscription" method="post" action="./inscription.php" onsubmit="return ValidateForm">
@@ -17,7 +17,8 @@
         <input type="checkbox" name="check_list[]" value="lol" id="lol"> League Of Legends
         <select name="listelol" size="1">
             Rank:
-            <option value="unranked">Unranked</option>
+            <option value="Unranked">Unranked</option>
+            <option value="Iron">Unranked</option>
             <option value="Bronze">Bronze</option>
             <option value="Silver">Silver</option>
             <option value="Gold">Gold</option>
@@ -26,7 +27,7 @@
             <option value="Master">Master</option>
             <option value="Chalenger">Challenger</option>
         </select><br>
-        <input type="checkbox" name="check_list[]" value="csgo"> CS GO
+        <input type="checkbox" name="check_list[]" value="csgo"> CS GO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <select size="1" id="listecs">
             <option>Unranked</option>
             <option>Silver</option>
@@ -38,7 +39,7 @@
 
 
         </select><br>
-        <input type="checkbox" name="check_list[]" value="overwatch"> Overwatch
+        <input type="checkbox" name="check_list[]" value="overwatch"> Overwatch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <select>
             <option>Unranked</option>
             <option>Bronze</option>
@@ -55,6 +56,17 @@
         <br>&nbsp;&nbsp;<button type="submit">S'inscrire</button>
     </form>
     </div>
+    <div id="deco"></div>
+<div id="slideshow">
+    <div id="deco2"></div>
+    <div class="slide-wrapper">
+        <div class="slide"><IMG src="Img\BandeauLoL.png"></div>
+        <div class="slide"><IMG src="Img\BandeauLoL2.png"></div>
+        <div class="slide"><IMG src="Img\BandeauOverwatch.jpg"></div>
+        <div class="slide"><IMG src="Img\BandeauOverwatch2.jpg"></div>
+        <div class="slide"><IMG src="Img\BandeauHearthstone.jpg"></div>
+    </div>
+</div>
 </div>
 </body>
 </html>
