@@ -10,8 +10,8 @@ body{
     background-color:#d7d7d7;
 }
 #deco {
-    width: 40px;
-    height:764px;
+    width: 4vh;
+    height:100vh;
     background-color:#444444;
     float: left;
 }
@@ -19,8 +19,8 @@ body{
 #FormInscri
 {
     background-color: #a31717 ;
-    width: 280px;
-    height: 764px;
+    width: 18vw;
+    height: 100vh;
     font-weight: bold;
     float: left;
     }
@@ -32,8 +32,8 @@ body{
 .box {
     display: none;
     background: #ccc;
-    width: 200px;
-    height: 100px;
+    width: 12vw;
+    height: 20vh;
 }
 #trigger:checked + .box {
     display: block;
@@ -43,15 +43,18 @@ body{
 }
 #slideshow {
     overflow: hidden;
-    height: 450px;
-    width: 900px;
+    height: 60vh;
+    width: 56.3vw;
     margin: 0 auto;
 }
 
 #deco2 {
-    border: solid red;
-
-
+    border:10px solid #444444;
+    position: absolute;
+    top:18.5vh;
+    left:31.3vw;
+    height:38.2vh;
+    width:56vw;
 }
 
 
@@ -77,4 +80,10 @@ body{
     70% {margin-left: -2700px;}
     80% {margin-left: -3600px;}
     90% {margin-left: -3600px;}
+}
+
+#Description {
+    margin-top: 10vh;
+    margin-left: 28vw;
+    width: 65vw;
 }
