@@ -83,7 +83,23 @@ body{
 }
 
 #Description {
-    margin-top: 10vh;
+    margin-top: 8vh;
     margin-left: 28vw;
     width: 65vw;
+    text-align: center;
+    font-size: 3vh;
+    color: #444444;
+}
+#Logo {
+    position: absolute;
+    top: 1vh;
+    left: 70vw;
+}
+#Titre {
+    position: absolute;
+    top: 3vh;
+    left: 43vw;
+    font-size: 10vh;
+    font-family: OCR A Std, monospace;
+    color: #444444;
 }
