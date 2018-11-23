@@ -1,0 +1,81 @@
+Bon,
+Comme j'avais dit je suis reparti de 0 avec le github, ne t'en fait pas axel, je vais te mettre toutes les commandes 1 à 1, t'auras just a copier coller et à comprendre un minimum ce qu'elles font tu veras ca viens rapidement :)
+
+
+Plus besoin d'utiliser Xampp, le logiciel qui permet de simuler un site Web, vu que j'ai déja un hebergement web, qui permet donc de gerer html, css, php et javascript
+C'est tout benef!
+
+Pour s'y connecter, va faloir que je crée des utilisateurs annexex, vous ou que je vous donne mon id et mon mdp pour que vous puissiez vs connecter et modifier, ajouter sans oublier la verification de "commit" qui permet de voir si ya pas de conflits.
+
+Donc dans un premier temps, si on a quelque chose à upload on passe déja par github,on check la compatibilité puis on upload sur mon hebergement web, par filezilla (je mets tt le liens pr download)
+
+FilleZilla: https://filezilla-project.org/download.php?platform=win64
+GitBash: https://git-scm.com/downloads
+
+------------------------------------------------------------------------------------------------------------GIT BASH-------------------------------------------------------------------------------------------------------------------
+
+1. Télécharger
+
+2. Installer (tout laisser de basser lors de l'installation)
+
+3. Lancer le logiciel
+
+4. entre la commande suivante si c'est la premiere fois que tu lances gitbash:
+		git clone https://github.com/DeaDLaskY/lanmakeup
+		Cette commande permet de dupliquer les données présentes sur le server sur don disque dur, à l'emplacement ou ton gitbash est ouvert ex: C:/User/<NomUtilisateur>/Desktop ...
+		Pour changer de dossier (directory) fais la commande cd suivit de l'emplacement ex: je me trouve dans C:/Users la commande cd LaskY va me deplacer dans le dossier C:/Users/LaskY
+		Pour afficher TOUS les dossiers et fichiers présents dans un meme dossier commande ls
+
+5. git status --> cette commande permet de vérifier si des documents/folders sont présents sur le server mais pas sur ton disque dur et inversement.
+
+5.1 Si il n'y a aucune erreur, c'est que tu as tous les derniers dossiers, et que personne n'a touché au projet.
+
+5.2 Si une erreur apparait , c'est que soit tu n'as pas un ou plusieurs fichiers présents sur le serveur ou que tu as modifié des documents, sauvegardés mais pas encore ajouté à github.
+	Si tu ne possèdes pas tous les fichiers du serveur effectues la commande:
+		git pull
+
+6. Pour ajouter tout un répertoire, déplace toi dans ce dernier Cf 4 ou Clique-droit dans le folder contenant les documents puis entres la commande:
+		
+		git add . --> oui le point est important, il permet d'ajouer TOUS les fichiers dernierements modifiés
+		
+7. Pour uploader un fichier, il aut ibligatoirement lui mettre un commentaire, on va utiliser ca a notre avantager, car les fichiers non touchés ne changent pas de description, donc quand tu vas utiliser la commande, on utilisera le format suivant:
+	Jour/Mois HeureEtMinutes ex: 21/10 15h45
+	pour ajouter un commentaire enrtes la commande:
+	git commit -m "21/10 15h45"
+
+8. Le commit n'upload pas les fichiers donc il faudra entrer la commande:
+	git push
+Si tout se passe bien, tu veras l'avancée de l'upload des fichiers et n'hésite pas a aller checker si les fichiers sont bien présents en cliquant sur mon lien github:
+https://github.com/DeaDLaskY/lanmakeup
+
+------------------------------------------------------------------------------------------------------------FILEZILA----------------------------------------------------------------------------------------------------------------------------------
+
+
+Comme j'arrive pas a créer de compte pour vous, jvais devoir vous filer mes ids pas de conneries svp jles ais pour 5ans :)
+
+
+1. Download et installer FilleZilla
+
+2. Lancer FilleZilla
+
+3. Aller dans Fille --> Site Manager
+
+4. General:
+	Protocole: SFTP
+	Host: home711227090.1and1-data.host
+	
+	Logon Type: Ask for password
+	User: u91389770-pderogis
+	Entrez pas le mdp tt de suite aller sur "se connecter" en bas de la page.
+5. Quand il vous demandera le mdp, vous entrerez SFTP121QSP, puis il faudra accepter le certificat.
+
+6. Il y aura déja des fichiers présent a droite du tableau de bord, celui qui nous interesse est lanmakeup qui se trouve à la racine.
+
+7. Quand la vérif GitHub est bonne, àce moment la, Dans Remote Site (partie Droite) DoubleClick sur LanMakeUp, puis trouvez votre emplacement de projet sur votre Disque Dur dans la partie gauche.
+
+8. Une fois les fichiers trouvés, entrez dans votre dossier lanmakeup, selectionnez tout (dossiers et fichiers) clickdroit, puis upload.
+8.1	Si FilleZilla vous demande de tout écraser et de tout transférer, choisissez, ne remplacer que si la taille a changé et que la date est plsu récente.
+
+9. une fois les fichiers upload, RDV sur le site e question pour vérifier si votre upload à fonctionné:
+
+http://www.web-epsi-lyon.com/pderogis/

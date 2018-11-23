@@ -2,7 +2,6 @@
 echo $_POST['mail'];
 echo $_POST['pseudo'];
 echo $_POST['mdp'];
-
 $mail = $_POST['mail'];
 $pseudo = $_POST['pseudo'];
 $mdp = $_POST['mdp'];
@@ -32,5 +31,4 @@ try {
 catch(PDOException $e)
 {
     echo "Connection failed: " . $e->getMessage();
-}
-//mysqli_query("INSERT INTO membre(EMAIL,PSEUDO,PASSWORD,JEUX) VALUES('mail','pseudo','mdp','$values','1')");
+};

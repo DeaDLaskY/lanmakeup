@@ -9,6 +9,36 @@ body{
     padding: 0px;
     background-color:#d7d7d7;
 }
+#FormInscri a{
+    display:block;
+    width:150px;
+    margin-left:50px;
+    line-height:50px;
+    text-align:center;
+    vertical-align:middle;
+    color:white;
+    text-decoration:none;
+    background-image:radial-gradient(farthest-side, #444444,#a31717);
+    border: 0px;
+}
+#FormInscri a:hover {
+    background-image:radial-gradient(farthest-side,#d7d7d7, #a31717);
+}
+#FormInscri button{
+    display:block;
+    width:150px;
+    margin-left:50px;
+    line-height:50px;
+    text-align:center;
+    vertical-align:middle;
+    color:white;
+    text-decoration:none;
+    background-image:radial-gradient(farthest-side,#444444,#a31717 );
+    border: 0px;
+}
+#FormInscri button:hover {
+    background-image:radial-gradient(farthest-side,#d7d7d7, #a31717);
+}
 #deco {
     width: 4vh;
     height:100vh;
@@ -89,6 +119,7 @@ body{
     text-align: center;
     font-size: 3vh;
     color: #444444;
+<<<<<<< HEAD
 }
 #Logo {
     position: absolute;
@@ -102,4 +133,6 @@ body{
     font-size: 10vh;
     font-family: OCR A Std, monospace;
     color: #444444;
+=======
+>>>>>>> 5c606c6b78b0a7b2dfbecb135eafc221dcabed66
 }
